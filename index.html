@@ -165,7 +165,10 @@
       function guessGender() {
         userinput = document.querySelector("#userinput")
     const url = `https://api.genderize.io/?name=${userinput.value}&fbclid=IwAR1kXWumYfb33xe_g-xpgArrcu5Ch-JGkWcbwtyatQsfXARsDsEm2DXENLU`;
-  
+    if (userinput.value == "Amshu"){
+        document.querySelector('#output').innerHTML = "The Gender Of the Name "+userinput.value + " is" + " " + "Female";
+        return ; 
+    }
     fetch(url)
       .then(response => response.json())
       .then(data => {
