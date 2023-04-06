@@ -150,8 +150,8 @@
     </header>
     <main>
       <div class="input-group">
-          <label for="name">Enter a name:</label>
-          <input type="text" id="userinput" name="name" placeholder="e.g. John Doe" required>
+          <label for="name">Enter AnyOne's First  name:</label>
+          <input type="text" id="userinput" name="name" placeholder="e.g. John" required>
           <button onclick="guessGender()">Guess Gender</button>
       </div>
       <div id="output"></div>
@@ -184,7 +184,7 @@
          gender = data.gender;
     document.querySelector('#output').innerHTML = "The Gender Of the Name "+userinput.value + " is" + " " + gender.charAt().toUpperCase() + gender.slice(1);
       })
-      .catch(error => alert("ERROR OCCURED I was Unable to Guess Your Gender Try another Name"));
+      .catch(error => alert("ERROR OCCURED. I was Unable to Guess Your Gender Try another Name"));
   }
       //   function check(){
 //   console.log("first started")
